@@ -21,7 +21,7 @@ async function handle_advance(data) {
 
   const output = eval(input);
 
-  const finish_req = await fetch(rollup_server + "/notice", {
+  const response = await fetch(rollup_server + "/notice", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
